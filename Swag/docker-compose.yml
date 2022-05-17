@@ -1,0 +1,19 @@
+version: '3'
+services:
+  swag:
+    image: linuxserver/swag
+    container_name: swag
+    volumes:
+      - ./config:/config
+      - ./default:/config/nginx/site-confs/default
+    environment:
+      - EMAIL=jpgomezt@eafit.edu.co
+      - URL=bookstore-p2.tk
+      - SUBDOMAINS=www
+      - VALIDATION=http
+      - TZ=America/Bogota
+      - PUID=500
+      - PGID=500
+    ports:
+      - "443:443"
+      - "80:80"
