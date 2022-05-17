@@ -1,9 +1,5 @@
-# LabTelematica
+# Proyecto 2 Telematica
 
-## Laboratorio 1: CMS
+## BookStore AutoScaling
 
-www.wordpress-pampa.tk
-
-## Laboratorio 2: MERN
-
-www.bookstore-pampa.tk
+www.bookstore-p2.tk
