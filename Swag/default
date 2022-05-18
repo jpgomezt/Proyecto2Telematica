@@ -25,7 +25,7 @@ server {
 	}
 
 	location @app {
-		proxy_pass http://lb-frontend-234791815.us-east-1.elb.amazonaws.com/;
+		proxy_pass http://lb-frontend-234791815.us-east-1.elb.amazonaws.com;
 	  	proxy_set_header Host $host;
     		proxy_redirect off;
     		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
